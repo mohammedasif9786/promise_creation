@@ -1,9 +1,8 @@
-
 function promiseCreation(input){
 
     return new Promise((resolve,reject)=>{
 
-        if(typeof(input) == String){
+        if(typeof(input) == "string"){
 
         setTimeout(()=>{
            resolve(input)
@@ -16,7 +15,7 @@ function promiseCreation(input){
     })
 }
 
-promiseCreation.them((data)=>{
+promiseCreation("asif").then((data)=>{
     console.log(data)
 })
 .catch((data)=>{
